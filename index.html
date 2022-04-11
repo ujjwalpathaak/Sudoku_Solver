@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="logo/favicon.png" />
+    <title>Sudoku Solver</title>
+  </head>
+  <body>
+
+    <video autoplay loop muted id="background-video">
+      <source id="desktop" src="videos/desktop.mp4" type="video/mp4" />
+    </video>
+    <video autoplay loop muted id="background-video-mobile">
+      <source id="desktop" src="videos/phone.mp4" type="video/mp4" />
+    </video>
+
+    
+    </div>
+
+    <div id="heading">
+      <img src="logo/Untitled-1.png" alt="" />
+    </div>
+
+    <div id="content">
+      <div id="puzzle-side">
+        <div id="puzzle"></div>
+      </div>
+
+      <div id="button-side">
+        <button id="solve">Solve</button>
+        <div>
+          <a href="index.html" class="reset">Reset Sudoku</a>
+          <a
+            style="padding: 3px 25.5px 3px 25.5px"
+            class="reset"
+            target="_blank"
+            href="https://sandiway.arizona.edu/sudoku/examples.html"
+            >Questions</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script/app.js"></script>
+  </body>
+</html>

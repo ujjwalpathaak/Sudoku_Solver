@@ -1,0 +1,258 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
+  /* overflow: hidden; */
+  font-family: 'Bebas Neue', cursive;
+}
+
+#background-video {
+  position: absolute;
+  height: 100%;
+  filter: opacity(50%);
+  z-index: -1;
+  
+}
+
+#puzzle-side {
+  /* height: 1520px; */
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+#button-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* #button-side div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+} */
+#ques {
+  font-size: 50px;
+  text-decoration: none;
+  color: #cc9544;
+  border: solid #cc9544 2px;
+  padding: 10px;
+}
+#ques:hover {
+  background-color: #361500;
+  color: rgb(255, 255, 255);
+  border: solid #ffffff 2px;
+}
+.reset {
+  font-size: 30px;
+  text-decoration: none;
+  color: #ffc776;
+  border: solid #ffc776 2px;
+  padding: 3px;
+  margin: 0px 10px 0px 10px;
+}
+.reset:hover {
+  background-color: #361500;
+  color: rgb(255, 255, 255);
+  border: solid #ffffff 2px;
+}
+
+#heading {
+  display: flex;
+  height: 180px;
+  justify-content: center;
+}
+#heading img {
+  height: 314px;
+  margin: 13px 0px 0px 673px;
+}
+#solve {
+  height: 79px;
+  background-color: #361500;
+  color: white;
+  border-radius: -1px;
+  font-size: 58px;
+  width: 220px;
+  position: relative;
+  border: solid 2px white;
+  margin: 109px 0px 0px 0px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+#solve:hover {
+  background-color: #632802;
+}
+#solve:active {
+  transform: scale(0.98);
+}
+
+/* puzzle */
+
+#puzzle {
+  width: 621px;
+  position: absolute;
+  filter: opacity(95%);
+  margin: 0px 0px 170px 0px;
+}
+#puzzle input {
+  width: 65px;
+  height: 65px;
+  text-align: end;
+}
+
+.odd-section {
+  background-color: #673e0f;
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+.even-section {
+  background-color: #ffffff;
+  color: #673e0f;
+  font-weight: 900;
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+#content {
+  /*   height: fit-content; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 580px;
+}
+#background-video-mobile {
+  display: none;
+}
+
+
+
+
+
+
+/* mobile view */
+@media only screen and (max-device-width: 500px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    /* overflow: hidden; */
+  }
+  #background-video {
+    display: none;
+  }
+
+  #puzzle-side {
+    height: 360px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #button-side div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #ques {
+    font-size: 50px;
+    text-decoration: none;
+    color: #cc9544;
+    border: solid #cc9544 2px;
+    padding: 10px;
+  }
+  #ques:hover {
+    background-color: #ec2929;
+    color: rgb(255, 255, 255);
+    border: solid #ffffff 2px;
+  }
+  .reset {
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffc776;
+    border: solid #ffc776 2px;
+    padding: 3px;
+    margin: 4px 10px 4px 10px;
+  }
+  .reset:hover {
+    background-color: #361500;
+    color: rgb(255, 255, 255);
+    border: solid #ffffff 2px;
+  }
+
+  #heading {
+    display: flex;
+    height: 110px;
+    justify-content: center;
+  }
+  #heading img {
+    height: 100px;
+    margin: 5px 0px 0px 0px;
+  }
+  #solve {
+    height: 79px;
+    background-color: #361500;
+    color: white;
+    border-radius: -1px;
+    font-size: 58px;
+    width: 220px;
+    position: relative;
+    border: solid 2px white;
+    margin: 30px 0px 0px 0px;
+    font-family: 'Bebas Neue', cursive;
+  }
+
+
+  #solve:active {
+    transform: scale(0.98);
+  }
+
+  #puzzle {
+    width: 360px;
+    /* position: absolute; */
+    filter: opacity(85%);
+    margin: 0px 0px 0px 0px;
+  }
+  #puzzle input {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+  }
+  
+
+  .odd-section {
+    background-color: #673e0f;
+    color: white;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+
+  }
+  .even-section {
+    background-color: #ffffff;
+    color: #673e0f;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  #content {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 360px 195px;
+  }
+  #background-video-mobile {
+    display: block;
+    z-index: -2;
+    position: absolute;
+    width: 100%;  filter: opacity(50%);
+  }
+}
